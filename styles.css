@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 106vh;
+}
+.navbar {
+  position: absolute;
+  top: 5%  ;
+  left: 70% ;
+  margin-left: auto; /* Adjust margin-left to create space from the left */
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  font-size: x-large;
+  text-decoration: none;
+  padding: 2px;
+  color: rgb(248, 248, 248);
+  font-weight: bolder;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 9px;
+
+}
+.navbar a:hover {
+  background-color: #F6C525;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url("logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 22rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  position: absolute;
+  font-size: 2rem; /* Adjust the font size as needed */
+  top: 20%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Center the absolute element */
+}
+
+body {
+  margin: 0;
+}
+.middle{
+  background-color: black;
+}
+footer{
+  background-color: black;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+footer p{
+  text-align: center;
+  top: 100%;
+  color: white;
+}
+.aboutus{
+  height: 10rem;
+}
+.tips{
+  display: flex;
+  flex-direction: row;
+}
+.tips-boxes{
+  margin-left: 20px;
+justify-content: center;
+  height: 25rem;
+  width: 20rem;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+.tips-boxes img {
+  height: 200px;
+  width: 100%;
+  transition: transform 0.3s ease; /* specify the property, duration, and timing function */
+}
+
+.tips-boxes img:hover {
+  transform: scale(1.2);
+}
+.tips-boxes button{
+  padding: 8px 40px;
+  margin-left: 2px;
+  position: sticky;
+}
